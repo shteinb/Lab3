@@ -1,13 +1,23 @@
 <!DOCTYPE html>
+<!-- 						ADD MORE COLORS				-->
 <html>
 <head>
     <title>Form Example</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="Jscript.js"></script>
+	<style>
+        body {
+            background-image: url('https://d26oc3sg82pgk3.cloudfront.net/files/media/edit/image/37247/article_full%401x.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
 </head>
 <body>
     <form id="form-container" action="/submit" method="post">
 	    <div id="header">
 			<a href="about.html" id="about-link">About Us</a>
+			<!--<a href="login.html" id="login-link">Login</a>-->
 		</div>
         <table>
             <tr>
@@ -117,23 +127,5 @@
         <br><br>
         <iframe src="https://www.youtube.com/embed/avEBVTvYePk" title="burgers" style="height:300px;width:450px;"></iframe>
     </form>
-	<!--<script>
-        // Let's add a simple function to display an alert when the form is submitted.
-        // Get the form element
-        const form = document.getElementById('form-container');
-		
-        // Add a submit event listener to the form
-        form.addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevent the default form submission behavior
-
-            // Get the value of the "Name" field
-            const nameInput = document.getElementById('name');
-            const name = nameInput.value;
-
-            // Display an alert with the entered name
-            alert(`Thank you, ${name}! Your order has been placed.`);
-        });
-	</script>-->
-	<script src="script.js"></script>
 </body>
 </html>

@@ -8,16 +8,18 @@
   border-radius: 8px;
 }
 
+/* Update the background color and font color */
+body {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
 /* Apply styles to the form elements */
 form {
   font-family: Arial, sans-serif; /* Use a different font-family */
 }
 
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
+/* Update the background color of input fields */
 input[type="text"],
 select,
 textarea,
@@ -28,11 +30,13 @@ input[type="date"] {
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  background-color: #fff; /* White background color */
 }
 
+/* Update the background color and hover effect of buttons */
 input[type="submit"],
 input[type="reset"] {
-  width: 150px; /* Resize the buttons */
+  width: 150px;
   padding: 10px;
   font-size: 16px;
   font-weight: bold;
@@ -42,10 +46,11 @@ input[type="reset"] {
   color: #fff;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 input[type="submit"]:hover,
-input[type="reset"] {
+input[type="reset"]:hover {
   background-color: #0056b3;
 }
 
@@ -63,7 +68,7 @@ img:hover {
 input:focus,
 select:focus,
 textarea:focus {
-  outline: 2px solid #007bff; /* Change focus outline color */
+  outline: 2px solid #007bff;
 }
 
 /* Use table to organize the form fields */
@@ -86,9 +91,8 @@ td {
   margin-bottom: 15px;
 }
 
-/* Add text focus on hover */
 .preference-item label:hover {
-  color: #007bff; /* Change the text color when hovering over the label */
+  color: #007bff;
   cursor: pointer;
 }
 
@@ -106,5 +110,75 @@ td {
 }
 
 #about-link:hover {
-  text-decoration: underline; /* Add underline on hover */
+  text-decoration: underline;
+}
+
+/* Apply styles to the login container */
+#login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#login-container h1 {
+  margin-bottom: 20px;
+}
+
+/* Style the login form */
+#login-form {
+  text-align: left;
+}
+
+#login-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+#login-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#login-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Add background color to header */
+#header {
+  background-color: #007bff;
+  padding: 10px;
+}
+
+/* Update link styles in header */
+#header a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+#header a:hover {
+  text-decoration: underline;
 }

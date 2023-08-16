@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+	<style>
+        /* Apply the background image to the body element */
+        body {
+            background-image: url('https://th.bing.com/th/id/OIP.kamYK-Yepb9ucPUjcNE2PQHaIe?pid=ImgDet&rs=1');
+            background-size: cover;
+            background-position: center;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            font-family: Arial, sans-serif;
+        }
+		
+		/* Add this style block to set the background image */	
+        /* Style the content within the body */
+        #login-container {
+            background-image: url('https://runninginmyhead.files.wordpress.com/2017/07/burgeroftheday.jpg?w=750');
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            max-width: 400px;
+            margin: auto;
+			margin-right: 775px; 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Style the form elements */
+        #login-form label,
+        #login-form input[type="text"],
+        #login-form input[type="password"],
+        #login-form input[type="submit"] {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+		
+        /* Style the labels for Username and Password */
+        #login-form label {
+            font-weight: bold;
+            color: #2ecc71; /* Change to your desired color */
+        }
+		
+    </style>
+</head>
+<body>
+    <div id="login-container">
+        <h1>Login</h1>
+        <form id="login-form" action="login.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
